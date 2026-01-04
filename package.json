@@ -1,24 +1,24 @@
 {
-  "name": "hooks",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/index.ts",
-    "start": "tsc -b && node ./dist/src/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "dotenv": "^17.2.3",
-    "@prisma/adapter-pg": "^7.0.1",
-    "@prisma/client": "^7.0.1",
-    "@types/express": "^5.0.5",
-    "express": "^5.1.0"
-  },
-  "devDependencies": {
-    "prisma": "^7.0.1"
-  }
+    "name": "hooks",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon ./src/index.ts",
+        "start": "tsc -b && node ./dist/src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "dotenv": "^17.2.3",
+        "@prisma/adapter-pg": "^7.0.1",
+        "@prisma/client": "^7.0.1",
+        "@types/express": "^5.0.5",
+        "express": "^5.1.0"
+    },
+    "devDependencies": {
+        "prisma": "^7.0.1"
+    }
 }
