@@ -16,8 +16,8 @@ async function main() {
     });
     await prisma.availableAction.create({
         data: {
-            name: "Solana",
-            image: "https://images.ctfassets.net/jg6lo9a2ukvr/7LFvam4zz8s3y7acW0L59P/1d95950167b950076a3fe8e6ce970e4e/Blog_Header_SOL__1_.png?fm=webp",
+            name: "Gemini",
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Google_Gemini_icon_2025.svg/960px-Google_Gemini_icon_2025.svg.png",
         },
     });
     await prisma.availableTrigger.create({
