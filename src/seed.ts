@@ -11,7 +11,7 @@ async function main() {
     await prisma.availableAction.create({
         data: {
             name: "Email",
-            image: "https://media.istockphoto.com/id/1125279178/vector/mail-line-icon.jpg?s=612x612&w=0&k=20&c=NASq4hMg0b6UP9V0ru4kxL2-J114O3TaakI467Pzjzw=",
+            image: "https://freepngimg.com/download/gmail/66572-google-icons-computer-logo-email-gmail.png",
         },
     });
     await prisma.availableAction.create({
@@ -23,7 +23,7 @@ async function main() {
     await prisma.availableTrigger.create({
         data: {
             name: "Webhook",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVQtyw3YP4pW8owoHsGyCI2o8POL2m7Hf9NA&s",
+            image: "https://cdn.worldvectorlogo.com/logos/webhooks.svg",
         },
     });
 }

@@ -1,4 +1,4 @@
-import express from "express";
+import express, { NextFunction, Request, Response } from "express";
 import { PrismaClient } from "./generated/prisma/client"
 import { PrismaPg } from "@prisma/adapter-pg"
 import dotenv from "dotenv";
@@ -39,5 +39,10 @@ app.post("/hooks/catch/:userId/:zapId", async (req, res) => {
         res.json(error).status(500)
     }
 });
+
+app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+  console.error(err.stack);
+  res.status(500).send('Internal Server Error');
+})
 
 app.listen(3001)
