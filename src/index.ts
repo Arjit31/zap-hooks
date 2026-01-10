@@ -2,6 +2,7 @@ import express, { NextFunction, Request, Response } from "express";
 import { PrismaClient } from "./generated/prisma/client"
 import { PrismaPg } from "@prisma/adapter-pg"
 import dotenv from "dotenv";
+import cors from "cors";
 dotenv.config();
 
 const adapter = new PrismaPg({ 
@@ -9,7 +10,13 @@ const adapter = new PrismaPg({
 });
 
 const app = express();
-app.use(express.json())
+const corsOptions = {
+    credentials: true,
+    origin: process.env.FRONTEND_URL,
+};
+
+app.use(express.json());
+app.use(cors(corsOptions));
 const prisma = new PrismaClient({adapter});
 
 app.get("/", (req, res) => {

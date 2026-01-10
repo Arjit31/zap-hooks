@@ -12,10 +12,12 @@
     "license": "ISC",
     "description": "",
     "dependencies": {
-        "dotenv": "^17.2.3",
         "@prisma/adapter-pg": "^7.0.1",
         "@prisma/client": "^7.0.1",
+        "@types/cors": "^2.8.19",
         "@types/express": "^5.0.5",
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.3",
         "express": "^5.1.0"
     },
     "devDependencies": {
