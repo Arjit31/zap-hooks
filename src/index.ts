@@ -12,6 +12,11 @@ const app = express();
 app.use(express.json())
 const prisma = new PrismaClient({adapter});
 
+app.get("/", (req, res) => {
+  console.log("pinged")
+  res.status(200).send("OK");
+});
+
 app.post("/hooks/catch/:userId/:zapId", async (req, res) => {
     const userId = req.params.userId;
     const zapId = req.params.zapId;
